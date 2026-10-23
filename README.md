@@ -77,7 +77,7 @@ First Value: `20`
 
 Second Value: `200`
 
-Output: `20 is 10.00% of 200`
+Output: `20 is 10% of 200`
 
 ### 4. Circle Area
 
