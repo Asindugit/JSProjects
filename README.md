@@ -23,7 +23,7 @@ This application allows users to enter a number and perform different mathematic
 ## Project Structure
 
 ```text
-ValueCalculator/
+JSProjects/
 │
 ├── index.html
 ├── style.css
