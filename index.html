@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Value Calculator</h2>
+
+        <p class="description">Enter a value and select an operation.</p>
+
+        <label for="userValue">Enter First Value</label>
+
+        <input type="number" id="userValue" placeholder="Enter a number">
+
+        <!-- Only for percentage ------------------------------------------------------------------------ -->
+
+        <div id="percentageSection" class="hidden">
+            <label for="secondValue">Enter Second Value</label>
+            <input type="number" id="secondValue" placeholder="Enter another number">
+            <button id="calculatePercentage" class="calculate-btn"> Calculate Percentage</button>
+        </div>
+
+        <div class="button-group">
+
+            <button id="squareBtn">Square</button>
+            <button id="halfBtn">Half</button>
+            <button id="percentageBtn">Percentage</button>
+            <button id="circleBtn">Area of Circle </button>
+
+        </div>
+
+        <div id="result" aria-live="polite"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

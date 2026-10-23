@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    color: #334155;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+button {
+    padding: 13px 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.calculate-btn {
+    width: 100%;
+    margin-bottom: 22px;
+    margin-top: -5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-right: 4px solid #2563eb;
+    border-radius: 6px;
+    color: #1e40af;
+    font-size: 15px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    display: none;
+}
+
+#result.show {
+    display: block;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
